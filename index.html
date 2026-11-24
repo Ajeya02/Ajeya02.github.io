@@ -26,13 +26,16 @@
         <a href="https://people.iith.ac.in/vineethnb/">Prof. Vineeth N. Balasubramanian</a>.
         I also collaborate with
         <a href="https://cogsci.ucsd.edu/people/faculty/meenakshi-khosla.html">Prof. Meenakshi Khosla</a>
-        at UC San Diego. In January 2027, I will join <strong>Amazon</strong> as an Applied Scientist Intern.
+        at UC San Diego. At IIT Hyderabad, I received the <strong>Academic Excellence Award</strong> for outstanding
+        academic performance. In January 2027, I will join <strong>Amazon</strong> as an Applied Scientist Intern.
       </p>
       <p>
         I completed my B.Tech in Information and Communication Technology at
         <a href="https://www.daiict.ac.in/">Dhirubhai Ambani University</a> (formerly DA-IICT).
         There, I worked with <a href="https://www.daiict.ac.in/faculty/bhaskar-chaudhury">Prof. Bhaskar Chaudhury</a>
-        on deep-learning surrogates for microwave–plasma simulation.
+        on deep-learning surrogates for microwave–plasma simulation. I also served as a
+        <strong>Teaching Assistant for Machine Learning</strong>, where I led lab sessions, graded assignments and
+        exams, and conducted oral exams.
       </p>
       <p>
         After graduating, I spent a year as a Software Engineer at Deutsche Bank.
@@ -114,7 +117,7 @@
     </article>
 
     <article class="paper">
-      <div class="thumb"><div class="tile">Physics of<br>Plasmas</div></div>
+      <div class="thumb"><img src="images/pop.jpg" alt="Input plasma density profiles and the scattered field they produce"></div>
       <div class="info">
         <a href="https://doi.org/10.1063/5.0320578" class="title">Benchmarking Deep Learning Models for Accurate and Efficient 2D Simulations of Microwave-Plasma Interaction</a><br>
         <strong>Ajeya Mandikal</strong>, K. Pandya, S. Gandha, B. Chaudhury<br>
@@ -129,45 +132,38 @@
     </article>
 
     <article class="paper">
-      <div class="thumb"><div class="tile">EAAI</div></div>
+      <div class="thumb"><img src="images/eaai.jpg" alt="Streamer evolution from the FDTD fluid model and the FNO-based hybrid model"></div>
       <div class="info">
         <a href="https://doi.org/10.1016/j.engappai.2026.113889" class="title">Physics-Guided Fourier Neural Operator Framework for Accelerated Simulation of High-Power Microwave Breakdown</a><br>
         K. Pandya, P. Ghosh, <strong>Ajeya Mandikal</strong>, S. Gandha, B. Chaudhury<br>
         <em>Engineering Applications of Artificial Intelligence</em>, 167, 2026<br>
         <a href="https://doi.org/10.1016/j.engappai.2026.113889">paper</a>
+        <p>
+          Simulating high-power microwave breakdown means solving Maxwell's equations coupled with a plasma
+          continuity equation, which is slow. We replace the expensive FDTD field updates with a Fourier Neural
+          Operator surrogate, coupled to a physics-based plasma solver. The hybrid framework reproduces streamer
+          growth in near-perfect agreement with full FDTD-fluid simulations while running about 60× faster,
+          bringing multi-day runs to under an hour.
+        </p>
       </div>
     </article>
 
     <article class="paper">
-      <div class="thumb"><div class="tile">MAPCON<br>2025</div></div>
+      <div class="thumb"><img src="images/mapcon.jpg" alt="Input plasma density and output scattered field"></div>
       <div class="info">
         <a href="https://doi.org/10.1109/MAPCON65020.2025.11426690" class="title">Loss Function Sensitivity in Deep Learning Models for Investigation of Microwave-Plasma Interaction</a><br>
         S. Gandha, K. Pandya, <strong>Ajeya Mandikal</strong>, B. Chaudhury<br>
         <em>IEEE Microwaves, Antennas, and Propagation Conference (MAPCON)</em>, 2025<br>
         <a href="https://doi.org/10.1109/MAPCON65020.2025.11426690">paper</a>
+        <p>
+          We study how the choice of loss function affects deep-learning models that predict microwave scattering
+          from inhomogeneous plasma. We train U-Net and hybrid U-Net–ViT models with MSE, Huber, and a composite
+          MSE–MAE–gradient-difference loss. The composite loss gives the best results on test samples, with higher
+          SSIM and PSNR and lower MSE.
+        </p>
       </div>
     </article>
   </section>
-
-  <!-- ===== Misc ===== -->
-  <section>
-    <h2>Honors</h2>
-    <ul class="plain">
-      <li>Academic Excellence Award, IIT Hyderabad, 2026</li>
-      <li>NeurIPS 2026 Financial Assistance Award</li>
-      <li>1st place (of 70 teams), IIT Hyderabad Deep Learning Hackathon, 2026</li>
-      <li>All India Rank 279, GATE 2025 (Data Science &amp; AI), top 0.49% of 57,054 candidates</li>
-    </ul>
-
-    <h2>Teaching</h2>
-    <ul class="plain">
-      <li>Teaching Assistant, Machine Learning, Dhirubhai Ambani University, Spring 2024</li>
-    </ul>
-  </section>
-
-  <footer>
-    Website template adapted from <a href="https://jonbarron.info/">Jon Barron</a>.
-  </footer>
 
 </main>
 </body>
