@@ -22,16 +22,27 @@
       <p>
         I am an M.Tech student in Artificial Intelligence at the
         <a href="https://www.iith.ac.in/">Indian Institute of Technology Hyderabad</a>,
-        where I work with <a href="https://people.iith.ac.in/vineethnb/">Prof. Vineeth N. Balasubramanian</a>.
-        I also collaborate with <a href="https://cogsci.ucsd.edu/people/faculty/meenakshi-khosla.html">Prof. Meenakshi Khosla</a> at UC San Diego.
-        In January 2027 I will join <strong>Amazon</strong> as an Applied Scientist Intern.
+        where I am fortunate to be advised by
+        <a href="https://people.iith.ac.in/vineethnb/">Prof. Vineeth N. Balasubramanian</a>.
+        I also collaborate with
+        <a href="https://cogsci.ucsd.edu/people/faculty/meenakshi-khosla.html">Prof. Meenakshi Khosla</a>
+        at UC San Diego. In January 2027, I will join <strong>Amazon</strong> as an Applied Scientist Intern.
       </p>
       <p>
-        Before this, I spent a year as a Software Engineer at Deutsche Bank, and completed my B.Tech in
-        Information and Communication Technology at
-        <a href="https://www.daiict.ac.in/">Dhirubhai Ambani University</a> (formerly DA-IICT),
-        where I worked with <a href="https://www.daiict.ac.in/faculty/bhaskar-chaudhury">Prof. Bhaskar Chaudhury</a>
+        I completed my B.Tech in Information and Communication Technology at
+        <a href="https://www.daiict.ac.in/">Dhirubhai Ambani University</a> (formerly DA-IICT).
+        There, I worked with <a href="https://www.daiict.ac.in/faculty/bhaskar-chaudhury">Prof. Bhaskar Chaudhury</a>
         on deep-learning surrogates for microwave–plasma simulation.
+      </p>
+      <p>
+        After graduating, I spent a year as a Software Engineer at Deutsche Bank.
+        I then returned to research for my master's at IIT Hyderabad.
+      </p>
+      <p>
+        My research draws on cognitive and developmental science. I identify abilities that humans develop
+        early in life but AI models still struggle with, and study the computational mechanisms inside models
+        that underlie these shortcomings. In the long run, I want to build models that learn and generalize
+        more like humans.
       </p>
       <p class="links">
         <a href="mailto:ajeya.mm@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -41,27 +52,21 @@
       </p>
     </div>
     <div class="intro-photo">
-      <img src="images/profile.jpg" alt="Photo of Ajeya Mandikal"
-           onerror="this.parentNode.classList.add('no-photo'); this.remove();">
-      <span class="initials" aria-hidden="true">AM</span>
+      <img src="images/profile.jpg" alt="Photo of Ajeya Mandikal">
     </div>
   </section>
 
   <!-- ===== Research ===== -->
-  <section>
-    <h2>Research</h2>
-    <p>
-      Drawing on cognitive and developmental science, I identify abilities that humans develop early in life
-      but AI models still struggle with, and try to understand the computational mechanisms inside models that
-      underlie these shortcomings. My long-term goal is to build models that learn and generalize more like humans.
-      Representative papers are <span class="highlight">highlighted</span>.
-    </p>
-  </section>
-
   <section class="papers">
+    <h2>Research</h2>
 
-    <article class="paper highlight">
-      <div class="thumb"><img src="images/smore.jpg" alt="Two frames from a SMORE minimal video pair"></div>
+    <article class="paper">
+      <div class="thumb stack">
+        <video src="images/smore_A.mp4" poster="images/smore_A.jpg" autoplay muted loop playsinline
+               aria-label="SMORE minimal pair, video A"></video>
+        <video src="images/smore_B.mp4" poster="images/smore_B.jpg" autoplay muted loop playsinline
+               aria-label="SMORE minimal pair, video B"></video>
+      </div>
       <div class="info">
         <a href="https://openreview.net/forum?id=CVU9KvAfqH" class="title">SMORE: Minimal-Pair Videos for Social, Moral and Rational Reasoning in MLLMs</a><br>
         <strong>Ajeya Mandikal</strong>, A. Garg, V. D. Jain, D. Khandelwal,
@@ -70,18 +75,22 @@
         <em>NeurIPS Workshop on Developmental Perspectives on AI (DevAI)</em>, 2026 &nbsp;<span class="tag">under review at ICLR 2027</span><br>
         <a href="https://openreview.net/forum?id=CVU9KvAfqH">OpenReview</a>
         <p>
-          A benchmark of 427 contrastive minimal video pairs that isolate the socially relevant variable while
-          holding everything else fixed. Under Joint-Pair Accuracy, which requires both videos of a pair to be
-          judged correctly, Gemini 3.1 Pro scores 63% against 96% for humans, yet layer-wise probes show the
-          relevant social information is still decodable inside models that answer wrongly.
+          SMORE is a benchmark of 427 contrastive minimal video pairs spanning rational, social, and moral judgment.
+          Each pair isolates the socially relevant variable while holding all other visual and contextual factors
+          fixed, so model errors can be attributed to social reasoning rather than visual confounds.
+        </p>
+        <p>
+          We introduce Joint-Pair Accuracy, which requires both videos in a pair to be judged correctly. It reveals
+          a 33-point gap between Gemini 3.1 Pro (63%) and humans (96%). Layer-wise linear probing across five
+          open-source MLLMs shows that social reasoning remains decodable even when models answer incorrectly.
         </p>
       </div>
     </article>
 
-    <article class="paper highlight hover-video">
+    <article class="paper">
       <div class="thumb">
-        <video src="images/slit.mp4" poster="images/slit.jpg" muted loop playsinline preload="metadata"
-               aria-label="A letter moving behind a narrow slit"></video>
+        <video src="images/act.mp4" poster="images/act.jpg" autoplay muted loop playsinline
+               aria-label="The word ACT moving behind a narrow slit"></video>
       </div>
       <div class="info">
         <a href="https://openreview.net/forum?id=d59i8J3AkB" class="title">Seeing Through a Slit: Anorthoscopic Perception in Multimodal Large Language Models</a><br>
@@ -90,9 +99,16 @@
         <em>NeurIPS Workshop on Developmental Perspectives on AI (DevAI)</em>, 2026<br>
         <a href="https://openreview.net/forum?id=d59i8J3AkB">OpenReview</a>
         <p>
-          Words move behind a narrow slit, so only a sliver is ever visible. Humans read every word at every slit
-          width; MLLMs that are near-perfect on fully visible stimuli collapse to 3% or below at a 5% slit,
-          exposing a gap in integrating visual information over time.
+          Anorthoscopic perception is the early-developing human ability to recover a whole object from partial
+          views revealed one after another through motion. We adapt the classical slit-viewing paradigm, in which
+          a stimulus moves behind a narrow stationary slit so that only a small part is visible at any instant.
+        </p>
+        <p>
+          Our stimuli are 50 three-letter English words and 50 matched anagram pseudowords, seen through slits
+          20%, 10%, or 5% of the stimulus width. Humans identified every stimulus at every slit width. Models that
+          are near-perfect on fully visible stimuli decline sharply as the slit narrows, and all six open-source
+          MLLMs fall to 3% accuracy or below at the 5% slit, pointing to a gap in integrating visual information
+          over time.
         </p>
       </div>
     </article>
@@ -105,8 +121,9 @@
         <em>Physics of Plasmas</em>, 33(5), 2026<br>
         <a href="https://doi.org/10.1063/5.0320578">paper</a>
         <p>
-          Image-to-image surrogates for FDTD microwave–plasma solvers. A custom U-Net–ViT is roughly 1000× faster
-          than the solver at about 1% error.
+          We develop deep-learning surrogates for 2D microwave–plasma simulations as computationally efficient
+          alternatives to traditional FDTD solvers. We benchmark several image-to-image translation architectures,
+          including a custom U-Net–ViT. The U-Net–ViT runs about 1000× faster than the FDTD solver with around 1% error.
         </p>
       </div>
     </article>
@@ -130,41 +147,12 @@
         <a href="https://doi.org/10.1109/MAPCON65020.2025.11426690">paper</a>
       </div>
     </article>
-
-  </section>
-
-  <!-- ===== Abstracts ===== -->
-  <section>
-    <h2>Conference Abstracts</h2>
-    <ul class="plain">
-      <li>
-        <a href="https://meetings-archive.aps.org/gec/2025/dt4/54">Fourier Neural Operator (FNO) Augmented 2D Fluid Simulations of High-Power Microwave (HPM) Breakdown</a><br>
-        K. K. Pandya, S. Gandha, <strong>A. Mandikal</strong>, B. Chaudhury — <em>78th Gaseous Electronics Conference (GEC)</em>, 2025
-      </li>
-      <li>
-        <a href="https://meetings-archive.aps.org/gec/2024/hw6/50">Comparison of Deep Learning Based Approaches for Simulation of Microwave-Plasma Interaction</a><br>
-        <strong>A. Mandikal</strong>, B. Chaudhury — <em>77th Gaseous Electronics Conference (GEC)</em>, 2024
-      </li>
-    </ul>
-  </section>
-
-  <!-- ===== Projects ===== -->
-  <section>
-    <h2>Other Projects</h2>
-    <ul class="plain">
-      <li>
-        <span class="title">Variable-Rate Visual Tokenization via Multi-Codebook Additive Quantization</span><br>
-        A single visual tokenizer with several post-training compression levels: four 4,096-entry codebooks trained
-        with nested dropout replace LlamaGen's single 16,384-entry codebook, giving monotonic rate–quality control
-        while beating the baseline in PSNR (21.07 vs. 20.71) and SSIM.
-      </li>
-    </ul>
   </section>
 
   <!-- ===== Misc ===== -->
   <section>
     <h2>Honors</h2>
-    <ul class="plain compact">
+    <ul class="plain">
       <li>Academic Excellence Award, IIT Hyderabad, 2026</li>
       <li>NeurIPS 2026 Financial Assistance Award</li>
       <li>1st place (of 70 teams), IIT Hyderabad Deep Learning Hackathon, 2026</li>
@@ -172,7 +160,7 @@
     </ul>
 
     <h2>Teaching</h2>
-    <ul class="plain compact">
+    <ul class="plain">
       <li>Teaching Assistant, Machine Learning, Dhirubhai Ambani University, Spring 2024</li>
     </ul>
   </section>
@@ -182,15 +170,5 @@
   </footer>
 
 </main>
-
-<script>
-  // Play the slit-viewing clip on hover (and keep it playing on touch devices).
-  document.querySelectorAll('.hover-video').forEach(function (row) {
-    var v = row.querySelector('video');
-    if (window.matchMedia('(hover: none)').matches) { v.autoplay = true; v.play().catch(function () {}); return; }
-    row.addEventListener('mouseenter', function () { v.play().catch(function () {}); });
-    row.addEventListener('mouseleave', function () { v.pause(); v.currentTime = 2; });
-  });
-</script>
 </body>
 </html>
